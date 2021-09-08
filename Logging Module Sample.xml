@@ -1,0 +1,33 @@
+<LoggerConfig>
+
+<DefaultTransactionTable>ESB_TRANSACTIONS</DefaultTransactionTable>
+
+<DefaultDumpTable>ESB_TRANSACTIONS_DUMP</DefaultDumpTable>
+
+<DefaultBOQ>ESB.EVENT.LOGGER.BOQ</DefaultBOQ>
+
+<Services><Service name="string" discriminator="ALL">
+
+<EnableLogging>YYYY</EnableLogging>
+
+<EnableDump>NNNN</EnableDump>
+
+<EnableBOQ>Y</EnableBOQ>
+
+<BusinessKeys>
+
+<BK3 source="REQ"><Key>MobileNumber</Key><Value>SOAP_Domain_Msg.Body.*:SendSMSRequest.*:RecipientMobileNumber</Value></BK3>
+<BK11 source="IRES"><Key>BEStatusCode</Key><Value>SOAP_Domain_Msg.Body.*:Header.*:Code</Value></BK11>
+<BK12 source="IRES"><Key>BEStatusDesc</Key><Value>SOAP_Domain_Msg.Body.*:Header.*:Description</Value></BK12>
+
+</BusinessKeys>
+
+<IgnoredFields>
+
+<IF1><Key>MessageLanguage</Key>
+
+<Value>SOAP_Domain_Msg.Body.*:SendSMSRequest.*:MessageLanguage</Value></IF1>
+
+</IgnoredFields>
+</Service></Services>
+</LoggerConfig>

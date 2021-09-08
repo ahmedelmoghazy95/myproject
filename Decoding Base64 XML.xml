@@ -1,0 +1,41 @@
+<SOAP_Domain_Msg xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:pus="http://esb.ppa.gov.sa/Payment/PushFailedSADADPayments" 
+ xmlns:fram="http://esb.ppa.gov.sa/framework.message.header.v0.2">
+ <Context operation="PushFailedSADADPayments" operationType="REQUEST_RESPONSE" 
+ portType="PushFailedSADADPayments" portTypeNamespace="http://esb.ppa.gov.sa/Payment/PushFailedSADADPayments" 
+ port="PushFailedSADADPayments" service="Sherine" fileName="PushFailedSADADPayments.wsdl">
+ <SOAP_Version>1.1</SOAP_Version><Namespace xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:pus="http://esb.ppa.gov.sa/Payment/PushFailedSADADPayments" 
+ xmlns:fram="http://esb.ppa.gov.sa/framework.message.header.v0.2"/>
+ <_XmlDeclaration Version="1.0" Encoding="UTF-8"/></Context><Header><fram:MessageHeader>
+ <RequestId>a1a929e2-6022-4098-97ca-371b0347c246</RequestId>
+ <TransactionId>cd8b82b56072e97500075461</TransactionId>
+ <SourceId>SPS</SourceId>
+ 
+ <ServiceId>Sherine</ServiceId>
+ 
+ <Language>English</Language><ClientDateTime>2021-04-11T15:20:05</ClientDateTime>
+ </fram:MessageHeader></Header>
+ 
+ <Body>
+ 
+ <SendSMSRequest>   
+ 
+ <RecipientMobileNumber> 01152705642 </RecipientMobileNumber>
+ <MessageLanguage>   English   </MessageLanguage >
+ 
+ </SendSMSRequest>
+ <Header>
+ 
+ <Code> 1911 </Code>
+ <Description> ZSC </Description>
+ 
+ 
+ 
+ <pus:PushFailedSADADPaymentsRequest><ToSystem>Pension</ToSystem>
+ <PaymentsCount>100</PaymentsCount></pus:PushFailedSADADPaymentsRequest>
+ 
+ </Header>
+ </Body>
+ 
+ </SOAP_Domain_Msg>
