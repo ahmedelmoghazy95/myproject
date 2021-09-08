@@ -12,7 +12,7 @@
  <TransactionId>cd8b82b56072e97500075461</TransactionId>
  <SourceId>SPS</SourceId>
  
- <ServiceId>Sherine</ServiceId>
+ <ServiceId>elmopghazy</ServiceId>
  
  <Language>English</Language><ClientDateTime>2021-04-11T15:20:05</ClientDateTime>
  </fram:MessageHeader></Header>
@@ -21,7 +21,7 @@
  
  <SendSMSRequest>   
  
- <RecipientMobileNumber> 01152705642 </RecipientMobileNumber>
+ <RecipientMobileNumber> 01223334444 </RecipientMobileNumber>
  <MessageLanguage>   English   </MessageLanguage >
  
  </SendSMSRequest>
